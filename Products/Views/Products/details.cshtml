@@ -1,0 +1,11 @@
+﻿@{
+    var prd = (ProductModel)ViewData["prodects"];
+    Layout = "_LayoutDesign";
+}
+<h3>Products's Information</h3>
+<ul class="list-group">
+    <li class="list-group-item">Product ID: @prd.Id</li>
+    <li class="list-group-item">Product Name: @prd.Name</li>
+<li class="list-group-item">Price: @prd.Price</li>
+<li class="list-group-item"><img src=@prd.Image alt=@prd.Name width="150" height="100"/></li>
+</ul>
